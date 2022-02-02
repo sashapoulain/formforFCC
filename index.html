@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="content row">
+    <div class="header-part">
+        <h1 id="title">FREECODECAMP FORM 101</h1>
+        <p id="description">
+            It's a form design for Freecodecamp sertification tutorial
+        </p>
+        <form id="survey-form">
+            <div class="div">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div>
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </div>
+            <div>
+                <label for="number" id="number-label"><span class="ageoption">(Optional)</span></label>
+                <input id="number" type="number" name="age" class="form-control" placeholder="Age" min="18" max="80" />
+            </div>
+            <div class="div">
+                <p class="firstq">Which programming language do you want to learn first?</p>
+                <select id="dropdown" class="form-control" name="role" required>
+                    <option disabled selected value>Select language</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">Java Script</option>
+                    <option value="java">JAVA</option>
+                    <option value="php">PHP</option>
+                </select>
+            </div>
+            <div class="div">
+                <p class="secondq">What's your coding level?</p>
+                <label>
+                    <input name="level" value="starter" type="radio" class="input-radio" checked>Starter
+                </label>
+                <label>
+                    <input name="level" value="middle" type="radio" class="input-radio">Middle
+                </label>
+                <label>
+                    <input name="level" value="quick-learner" type="radio" class="input-radio">QuickLearner
+                </label>
+            </div>
+            <div class="div">
+                <p class="thirdq">Which days can you practice for coding?</p>
+                <label>
+                    <input name="prefer" value="sunday" type="checkbox" class="input-checkbox">Sunday
+                </label>
+                <label>
+                    <input name="prefer" value="monday" type="checkbox" class="input-checkbox">Monday
+                </label>
+                <label>
+                    <input name="prefer" value="tuesday" type="checkbox" class="input-checkbox">Tuesday
+                </label>
+                <label>
+                    <input name="prefer" value="wednesday" type="checkbox" class="input-checkbox">Wednesday
+                </label>
+                <label>
+                    <input name="prefer" value="thursday" type="checkbox" class="input-checkbox">Thursday
+                </label>
+                <label>
+                    <input name="prefer" value="friday" type="checkbox" class="input-checkbox">Friday
+                </label>
+                <label>
+                    <input name="prefer" value="saturday" type="checkbox" class="input-checkbox">Saturday
+                </label>
+            </div>
+            <div class="div">
+                <p class="part-text">Anything you want to say?</p>
+                <textarea id="text-area" class="input-textarea" name="text-area" placeholder="Write it here...">
+                    </textarea>
+            </div>
+            <button type="submit" id="submit" class="button">Submit</button>
+        </form>
+    </div>
+</div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
